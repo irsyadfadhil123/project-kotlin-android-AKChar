@@ -1,3 +1,73 @@
 <resources>
-    <string name="app_name">ArknightsCharactersList</string>
+    <string name="app_name">Arknights Characters List</string>
+    <string name="char_name">Nama Karakter</string>
+    <string name="description">Deskripsi</string>
+    <string name="list">List</string>
+    <string name="grid">Grid</string>
+    <string-array name="data_name">
+        <item>Aak</item>
+        <item>Chongyue</item>
+        <item>Ebenholz</item>
+        <item>Executor the Ex Foedere</item>
+        <item>Gnosis</item>
+        <item>Hellagur</item>
+        <item>Hoederer</item>
+        <item>Lee</item>
+        <item>Lessing</item>
+        <item>Logos</item>
+        <item>Lumen</item>
+    </string-array>
+    <string-array name="data_description">
+        <item>A medical personnel from Lees Detective Agency recommended by Mr. Lee, Aak was a well-known underground doctor operating in the gray zones of Lungmen. After joining, he proved to be a tremendous wellspring of medical knowledge and theory with the clinical experience to back it up, though his style of practice is rather worrying. However, based upon Dr. Kaltsits comprehensive evaluation, he was recommended on a provisional basis to the medical equipment department and technological development team.</item>
+        <item>Chongyue, the elder brother of landship residents Nian, Dusk, and Ling. He has a close relationship with government organizations such as the Yanese Ministry of War and the Sui Regulator. Previously served as a martial arts instructor at the nomadic city Yumen, a position which he has resigned from. He came to Rhodes Island to visit his family, and after a round of audits, he is temporarily residing onboard the landship as a visitor. Chongyue possesses rich combat experience and has provided Rhodes Island his unique combat suggestions. However, as requested by Dr. Kaltsit, Chongyue rarely participates in missions directly.</item>
+        <item>Ebenholz, a Leithanien commoner who became infected with Oripathy during the Vyseheim incident. Introduced to Rhodes Island for treatment by Operator Hibiscus, he demonstrates an extraordinary talent for Originium Arts. Following examinations, he joined Rhodes Island as a field operator.</item>
+        <item>Executor, professional statutory executor of the Laterano Notarial Hall, is entitled to the privileges listed in Clauses 1 through 13 of the Laterano Constitution and has been personally granted the title of Saint by the current Lateran Pope Yvangelista XI. Laterano has not placed any restrictions on Rhodes Islands contact with this Saint, and the rapport between us and the Notarial Hall continues to grow. He continues to provide services to Rhodes Island in accordance with his contract, while performing tasks pertaining to the rights of Lateran citizens.</item>
+        <item>Former CTO of Karlan Trade. Joined Rhodes Island as an operator via special agreement between Karlan Trade and Rhodes Island. Directed a multitude of core technological developments as well as planned industrial facilities for Karlan Trade; he also did in-depth research on Originium during his time there. Currently a member of Rhodes Islands principal laboratory, working on cutting-edge research.</item>
+        <item>Hellagur once belonged to the Ursus Imperial Guard. He is the acting manager of Azazel, an underground clinic for the Chernobog infected. All other relevant work experience has been lost. His mature knowledge of military theoretical systems and his ability in combat make him suitable for a vast majority of combat operations. He is currently in an agreement to be stationed at Rhodes Island, where he provides tactical support.</item>
+        <item>The early career of former Sarkaz mercenary captain Hoederer is unclear. He participated in the transfer of Babel as part of the guard detail, leaving after Babel was dismantled. He was then spotted at Chernobog alongside Ines and W as a mercenary hired by Reunion, before disappearing after the Chernobog Incident. His next appearance was as a member of the Military Commission in Londinium. After obtaining certain key information, Hoederer left them and reestablished contact with Rhodes Island, once again signing a memorandum of strategic cooperation with us after discussions with Amiya.</item>
+        <item>Private investigator, and founder of Lees Detective Agency. Lee first encountered Rhodes Island during its expansion into Lungmen, and the two parties formed a business relationship thereafter. Has both provided information and consultation services on local Lungmen affairs, as well as recommended talents to Rhodes Island.</item>
+        <item>Lessing Maeyer is an auditing student at Leithaniens Ludwigs-Universität who came to Rhodes Island with Ebenholz. He has signed a memorandum of cooperation with us, taking on the code name Lessing and assisting Rhodes Island with operations within Leithanien.</item>
+        <item>Logos, elite caster operator, Arts master, and young mistress of the Convallis of the Banshees. Participated in the Kazdel Civil War as one of Babels core members, and became one of the first elite operators of Rhodes Island. He is credited with establishing the standards and procedures for assessing an operators Originium Arts assimilation, the definitive benchmark for predicting future Arts potential.</item>
+        <item>Lumen, on the recommendation of Elysium and Kaltsit, is now working as a Rhodes Island operator in Iberia, helping render medical aid to Infected persons in Iberias territories. Additionally, Lumen will also participate in joint meetings between Rhodes Island, Ægir, and the Inquisition, offering suggestions based on his own perspectives and working with all parties to find a possibility of mutual aid in the face of future contingencies.</item>
+    </string-array>
+    <string-array name="data_char_photo">
+        <item>https://arknights.wiki.gg/images/thumb/6/67/Aak_icon.png/120px-Aak_icon.png</item>
+        <item>https://arknights.wiki.gg/images/thumb/3/3c/Chongyue_icon.png/120px-Chongyue_icon.png</item>
+        <item>https://arknights.wiki.gg/images/thumb/2/2d/Ebenholz_icon.png/120px-Ebenholz_icon.png</item>
+        <item>https://arknights.wiki.gg/images/thumb/1/1b/Executor_the_Ex_Foedere_icon.png/120px-Executor_the_Ex_Foedere_icon.png</item>
+        <item>https://arknights.wiki.gg/images/thumb/c/c3/Gnosis_icon.png/120px-Gnosis_icon.png</item>
+        <item>https://arknights.wiki.gg/images/thumb/d/d9/Hellagur_icon.png/120px-Hellagur_icon.png</item>
+        <item>https://arknights.wiki.gg/images/thumb/7/7b/Hoederer_icon.png/120px-Hoederer_icon.png</item>
+        <item>https://arknights.wiki.gg/images/thumb/9/9e/Lee_icon.png/120px-Lee_icon.png</item>
+        <item>https://arknights.wiki.gg/images/thumb/4/4d/Lessing_icon.png/120px-Lessing_icon.png</item>
+        <item>https://arknights.wiki.gg/images/thumb/a/a9/Logos_icon.png/120px-Logos_icon.png</item>
+        <item>https://arknights.wiki.gg/images/thumb/d/df/Lumen_icon.png/120px-Lumen_icon.png</item>
+    </string-array>
+    <string-array name="data_class_photo">
+        <item>https://arknights.wiki.gg/images/thumb/0/06/Specialist.png/50px-Specialist.png</item>
+        <item>https://arknights.wiki.gg/images/thumb/7/74/Guard.png/50px-Guard.png</item>
+        <item>https://arknights.wiki.gg/images/thumb/e/e6/Caster.png/50px-Caster.png</item>
+        <item>https://arknights.wiki.gg/images/thumb/7/74/Guard.png/50px-Guard.png</item>
+        <item>https://arknights.wiki.gg/images/b/b6/Supporter.png</item>
+        <item>https://arknights.wiki.gg/images/thumb/7/74/Guard.png/50px-Guard.png</item>
+        <item>https://arknights.wiki.gg/images/thumb/7/74/Guard.png/50px-Guard.png</item>
+        <item>https://arknights.wiki.gg/images/thumb/0/06/Specialist.png/50px-Specialist.png</item>
+        <item>https://arknights.wiki.gg/images/thumb/7/74/Guard.png/50px-Guard.png</item>
+        <item>https://arknights.wiki.gg/images/thumb/e/e6/Caster.png/50px-Caster.png</item>
+        <item>https://arknights.wiki.gg/images/thumb/2/26/Medic.png/49px-Medic.png</item>
+    </string-array>
+    <string-array name="data_subclass_photo">
+        <item>https://arknights.wiki.gg/images/thumb/f/fe/Geek_Specialist.png/50px-Geek_Specialist.png</item>
+        <item>https://arknights.wiki.gg/images/thumb/4/40/Fighter_Guard.png/49px-Fighter_Guard.png</item>
+        <item>https://arknights.wiki.gg/images/thumb/b/b5/Mystic_Caster.png/50px-Mystic_Caster.png</item>
+        <item>https://arknights.wiki.gg/images/thumb/f/fc/Reaper_Guard.png/50px-Reaper_Guard.png</item>
+        <item>https://arknights.wiki.gg/images/thumb/f/fb/Hexer_Supporter.png/35px-Hexer_Supporter.png</item>
+        <item>https://arknights.wiki.gg/images/thumb/f/f1/Soloblade_Guard.png/50px-Soloblade_Guard.png</item>
+        <item>https://arknights.wiki.gg/images/thumb/b/b2/Crusher_Guard.png/50px-Crusher_Guard.png</item>
+        <item>https://arknights.wiki.gg/images/thumb/9/99/Merchant_Specialist.png/50px-Merchant_Specialist.png</item>
+        <item>https://arknights.wiki.gg/images/thumb/2/2c/Dreadnought_Guard.png/50px-Dreadnought_Guard.png</item>
+        <item>https://arknights.wiki.gg/images/f/fd/Core_Caster.png</item>
+        <item>https://arknights.wiki.gg/images/thumb/9/98/Therapist_Medic.png/47px-Therapist_Medic.png</item>
+    </string-array>
+
 </resources>
