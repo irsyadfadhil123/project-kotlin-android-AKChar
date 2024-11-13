@@ -1,6 +1,8 @@
 package project.arknightscharacterslist
 
+import android.content.Intent
 import android.os.Bundle
+import android.view.LayoutInflater
 import android.view.Menu
 import android.view.MenuItem
 import android.widget.Toast
@@ -11,14 +13,17 @@ import androidx.core.view.WindowInsetsCompat
 import androidx.recyclerview.widget.GridLayoutManager
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
+import project.arknightscharacterslist.databinding.ActivityMainBinding
 
 class MainActivity : AppCompatActivity() {
+    private lateinit var binding: ActivityMainBinding
     private lateinit var rvChars: RecyclerView
     private var list = ArrayList<Char>()
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_main)
+        binding = ActivityMainBinding.inflate(layoutInflater)
+        setContentView(binding.root)
 
         rvChars = findViewById(R.id.rv_chars)
         rvChars.setHasFixedSize(true)
@@ -71,6 +76,8 @@ class MainActivity : AppCompatActivity() {
     }
 
     private fun showSelectedChar(char: Char) {
-        Toast.makeText(this, "Kamu memilih " + char.name, Toast.LENGTH_SHORT).show()
+        val moveToCharDetail = Intent(this@MainActivity, CharDetailActivity::class.java)
+        moveToCharDetail.putExtra(CharDetailActivity.DETAIL_CHAR, char)
+        startActivity(moveToCharDetail)
     }
 }

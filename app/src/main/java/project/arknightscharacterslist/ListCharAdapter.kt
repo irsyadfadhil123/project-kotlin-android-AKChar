@@ -1,13 +1,10 @@
 package project.arknightscharacterslist
 
 import android.view.LayoutInflater
-import android.view.View
 import android.view.ViewGroup
-import android.widget.ImageView
-import android.widget.TextView
-import android.widget.Toast
 import androidx.recyclerview.widget.RecyclerView
 import com.bumptech.glide.Glide
+import project.arknightscharacterslist.databinding.ItemRowCharBinding
 
 class ListCharAdapter(private val listChar: ArrayList<Char>) : RecyclerView.Adapter<ListCharAdapter.ListViewHolder>() {
     private lateinit var onItemClickCallback: OnItemClickCallback
@@ -15,37 +12,31 @@ class ListCharAdapter(private val listChar: ArrayList<Char>) : RecyclerView.Adap
     fun setOnItemClickCallback(onItemClickCallback: OnItemClickCallback) {
         this.onItemClickCallback = onItemClickCallback
     }
-    override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ListViewHolder {
-        val view: View = LayoutInflater.from(parent.context).inflate(R.layout.item_row_char, parent, false)
-        return ListViewHolder(view)
+    override fun onCreateViewHolder(viewGroup: ViewGroup, i: Int): ListViewHolder {
+        val binding = ItemRowCharBinding.inflate(LayoutInflater.from(viewGroup.context), viewGroup, false)
+        return ListViewHolder(binding)
     }
 
     override fun onBindViewHolder(holder: ListViewHolder, position: Int) {
         val (name, description, photoChar, photoClass, photoSubclass) = listChar[position]
         Glide.with(holder.itemView.context)
             .load(photoChar)
-            .into(holder.imgPhotoChar)
+            .into(holder.binding.imgCharPhoto)
         Glide.with(holder.itemView.context)
             .load(photoClass)
-            .into(holder.imgPhotoClass)
+            .into(holder.binding.imgClassPhoto)
         Glide.with(holder.itemView.context)
             .load(photoSubclass)
-            .into(holder.imgPhotoSubclass)
-        holder.tvName.text = name
-        holder.tvDescription.text = description
+            .into(holder.binding.imgSubclassPhoto)
+        holder.binding.tvItemName.text = name
+        holder.binding.tvItemDescription.text = description
 
         holder.itemView.setOnClickListener { onItemClickCallback.onItemClicked(listChar[holder.adapterPosition]) }
     }
 
     override fun getItemCount(): Int = listChar.size
 
-    class ListViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView) {
-        val imgPhotoChar: ImageView = itemView.findViewById(R.id.img_char_photo)
-        val imgPhotoClass: ImageView = itemView.findViewById(R.id.img_class_photo)
-        val imgPhotoSubclass: ImageView = itemView.findViewById((R.id.img_subclass_photo))
-        val tvName: TextView = itemView.findViewById(R.id.tv_item_name)
-        val tvDescription: TextView = itemView.findViewById(R.id.tv_item_description)
-    }
+    class ListViewHolder(var binding: ItemRowCharBinding) : RecyclerView.ViewHolder(binding.root)
 
     interface OnItemClickCallback {
         fun onItemClicked(data: Char)
