@@ -2,20 +2,16 @@ package project.arknightscharacterslist
 
 import android.content.Intent
 import android.os.Bundle
-import android.view.LayoutInflater
 import android.view.Menu
 import android.view.MenuItem
-import android.widget.Toast
-import androidx.activity.enableEdgeToEdge
+import android.view.View
 import androidx.appcompat.app.AppCompatActivity
-import androidx.core.view.ViewCompat
-import androidx.core.view.WindowInsetsCompat
 import androidx.recyclerview.widget.GridLayoutManager
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import project.arknightscharacterslist.databinding.ActivityMainBinding
 
-class MainActivity : AppCompatActivity() {
+class MainActivity : AppCompatActivity(), View.OnClickListener {
     private lateinit var binding: ActivityMainBinding
     private lateinit var rvChars: RecyclerView
     private var list = ArrayList<Char>()
@@ -30,6 +26,17 @@ class MainActivity : AppCompatActivity() {
 
         list.addAll(getListChars())
         showRecyclerList()
+
+        binding.aboutPage.setOnClickListener(this)
+    }
+
+    override fun onClick(v: View?) {
+        when (v?.id) {
+            binding.aboutPage.id -> {
+                val moveToAbout = Intent(this@MainActivity, AboutActivity::class.java)
+                startActivity(moveToAbout)
+            }
+        }
     }
 
     override fun onCreateOptionsMenu(menu: Menu?): Boolean {
