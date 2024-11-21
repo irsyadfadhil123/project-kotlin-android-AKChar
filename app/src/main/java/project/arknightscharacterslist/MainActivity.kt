@@ -62,9 +62,10 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
         val dataCharPhoto = resources.getStringArray(R.array.data_char_photo)
         val dataClassPhoto = resources.getStringArray(R.array.data_class_photo)
         val dataSubclassPhoto = resources.getStringArray(R.array.data_subclass_photo)
+        val dataCharDetailPhoto = resources.getStringArray(R.array.data_chardetail_photo)
         val listChar = ArrayList<Char>()
         for (i in dataName.indices) {
-            val char = Char(dataName[i], dataDescription[i], dataCharPhoto[i], dataClassPhoto[i], dataSubclassPhoto[i])
+            val char = Char(dataName[i], dataDescription[i], dataCharPhoto[i], dataClassPhoto[i], dataSubclassPhoto[i], dataCharDetailPhoto[i])
             listChar.add(char)
         }
         return listChar

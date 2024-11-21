@@ -9,5 +9,6 @@ data class Char(
     val description: String,
     val photoChar: String,
     val photoClass: String,
-    val photoSubclass: String
+    val photoSubclass: String,
+    val photoCharDetail: String
 ) : Parcelable

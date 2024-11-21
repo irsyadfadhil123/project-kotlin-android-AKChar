@@ -70,5 +70,18 @@
         <item>https://arknights.wiki.gg/images/f/fd/Core_Caster.png</item>
         <item>https://arknights.wiki.gg/images/thumb/9/98/Therapist_Medic.png/47px-Therapist_Medic.png</item>
     </string-array>
+    <string-array name="data_chardetail_photo">
+        <item>https://arknights.wiki.gg/images/7/74/Aak_Elite_2.png</item>
+        <item>https://arknights.wiki.gg/images/9/9c/Chongyue_Elite_2.png</item>
+        <item>https://arknights.wiki.gg/images/e/e1/Ebenholz_Elite_2.png</item>
+        <item>https://arknights.wiki.gg/images/6/6d/Executor_the_Ex_Foedere_Elite_2.png</item>
+        <item>https://arknights.wiki.gg/images/4/45/Gnosis_Elite_2.png</item>
+        <item>https://arknights.wiki.gg/images/c/ca/Hellagur_Elite_2.png</item>
+        <item>https://arknights.wiki.gg/images/4/46/Hoederer_Elite_2.png</item>
+        <item>https://arknights.wiki.gg/images/b/bb/Lee_Elite_2.png</item>
+        <item>https://arknights.wiki.gg/images/2/2f/Lessing_Elite_2.png</item>
+        <item>https://arknights.wiki.gg/images/b/ba/Logos_Elite_2.png</item>
+        <item>https://arknights.wiki.gg/images/c/ca/Lumen_Elite_2.png</item>
+    </string-array>
 
 </resources>
