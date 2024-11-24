@@ -58,14 +58,29 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
 
     private fun getListChars(): ArrayList<Char> {
         val dataName = resources.getStringArray(R.array.data_name)
-        val dataDescription = resources.getStringArray(R.array.data_description)
-        val dataCharPhoto = resources.getStringArray(R.array.data_char_photo)
-        val dataClassPhoto = resources.getStringArray(R.array.data_class_photo)
-        val dataSubclassPhoto = resources.getStringArray(R.array.data_subclass_photo)
-        val dataCharDetailPhoto = resources.getStringArray(R.array.data_chardetail_photo)
+        val dataCharProfile = resources.getStringArray(R.array.data_char_profile)
+        val dataCharIcon = resources.getStringArray(R.array.data_char_icon_photo)
+        val dataCharClassPhoto = resources.getStringArray(R.array.data_char_class_photo)
+        val dataCharSubclassPhoto = resources.getStringArray(R.array.data_char_subclass_photo)
+        val dataCharStoryText = resources.getStringArray(R.array.data_char_story)
+        val dataCharOverviewText = resources.getStringArray(R.array.data_char_overview)
+        val dataCharFactionPhoto = resources.getStringArray(R.array.data_char_faction_photo)
+        val dataCharElite1Photo = resources.getStringArray(R.array.data_char_elite_1_photo)
+        val dataCharElite2Photo = resources.getStringArray(R.array.data_char_elite_2_photo)
         val listChar = ArrayList<Char>()
         for (i in dataName.indices) {
-            val char = Char(dataName[i], dataDescription[i], dataCharPhoto[i], dataClassPhoto[i], dataSubclassPhoto[i], dataCharDetailPhoto[i])
+            val char = Char(
+                dataName[i],
+                dataCharProfile[i],
+                dataCharIcon[i],
+                dataCharClassPhoto[i],
+                dataCharSubclassPhoto[i],
+                dataCharStoryText[i],
+                dataCharOverviewText[i],
+                dataCharFactionPhoto[i],
+                dataCharElite1Photo[i],
+                dataCharElite2Photo[i],
+                )
             listChar.add(char)
         }
         return listChar

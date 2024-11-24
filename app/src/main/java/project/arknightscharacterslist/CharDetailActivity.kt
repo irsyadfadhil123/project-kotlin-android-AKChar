@@ -34,11 +34,44 @@ class CharDetailActivity : AppCompatActivity() {
 
         if (char != null) {
             supportActionBar?.title= char.name
-            val text = "Name: ${char.name}, \nDescription: ${char.description}"
-            binding.tvTest.text = text
-            Glide.with(binding.ivChar.context)
-                .load(char.photoCharDetail)
-                .into(binding.ivChar)
+            binding.tvCharName.text = char.name
+            binding.tvCharProfile.text = char.descriptionProfile
+            binding.tvCharStory.text = char.descriptionStory
+            binding.tvCharOverview.text = char.descriptionOverview
+            // Char Background, faction, & art
+            Glide.with(binding.ivCharBg.context)
+                .load(getString(R.string.data_char_background))
+                .into(binding.ivCharBg)
+            Glide.with(binding.ivCharFaction.context)
+                .load(char.photoCharFaction)
+                .into(binding.ivCharFaction)
+            Glide.with(binding.ivCharArt.context)
+                .load(char.photoCharElite1)
+                .into(binding.ivCharArt)
+            // Char Class & Subclass
+            Glide.with(binding.ivCharClass.context)
+                .load(char.photoClass)
+                .into(binding.ivCharClass)
+            Glide.with(binding.ivCharSubclass.context)
+                .load(char.photoSubclass)
+                .into(binding.ivCharSubclass)
+            // imageButton
+            Glide.with(binding.ibCharElite1.context)
+                .load(getString(R.string.data_char_elite_1_logo))
+                .into(binding.ibCharElite1)
+            Glide.with(binding.ibCharElite2.context)
+                .load(getString(R.string.data_char_elite_2_logo))
+                .into(binding.ibCharElite2)
+            binding.ibCharElite1.setOnClickListener {
+                Glide.with(binding.ivCharArt.context)
+                    .load(char.photoCharElite1)
+                    .into(binding.ivCharArt)
+            }
+            binding.ibCharElite2.setOnClickListener {
+                Glide.with(binding.ivCharArt.context)
+                    .load(char.photoCharElite2)
+                    .into(binding.ivCharArt)
+            }
         }
     }
 

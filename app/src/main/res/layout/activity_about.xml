@@ -8,16 +8,48 @@
     android:padding="0dp"
     tools:context=".AboutActivity">
 
+    <ImageView
+        android:id="@+id/iv_fotodiri"
+        android:layout_width="240dp"
+        android:layout_height="240dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="96dp"
+        android:layout_marginEnd="32dp"
+        android:contentDescription="@string/foto_diri"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0"
+        tools:srcCompat="@tools:sample/avatars" />
+
     <TextView
-        android:id="@+id/textView"
+        android:id="@+id/tv_nama"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginStart="8dp"
-        android:layout_marginTop="328dp"
+        android:layout_marginTop="32dp"
         android:layout_marginEnd="8dp"
-        android:text="test"
+        android:text="@string/nama"
+        android:textAlignment="center"
+        android:textSize="24sp"
+        android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toBottomOf="@+id/iv_fotodiri" />
+
+    <TextView
+        android:id="@+id/tv_email"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:text="@string/email"
+        android:textAlignment="center"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_nama" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

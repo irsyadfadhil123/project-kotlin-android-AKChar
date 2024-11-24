@@ -6,9 +6,13 @@ import kotlinx.parcelize.Parcelize
 @Parcelize
 data class Char(
     val name: String,
-    val description: String,
-    val photoChar: String,
+    val descriptionProfile: String,
+    val photoCharIcon: String,
     val photoClass: String,
     val photoSubclass: String,
-    val photoCharDetail: String
+    val descriptionStory: String,
+    val descriptionOverview: String,
+    val photoCharFaction: String,
+    val photoCharElite1: String,
+    val photoCharElite2: String,
 ) : Parcelable
