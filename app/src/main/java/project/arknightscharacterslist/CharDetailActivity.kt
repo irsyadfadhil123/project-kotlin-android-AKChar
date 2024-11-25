@@ -1,7 +1,9 @@
 package project.arknightscharacterslist
 
+import android.content.Intent
 import android.graphics.Color
 import android.graphics.drawable.ColorDrawable
+import android.net.Uri
 import android.os.Build
 import android.os.Bundle
 import android.view.MenuItem
@@ -71,6 +73,19 @@ class CharDetailActivity : AppCompatActivity() {
                 Glide.with(binding.ivCharArt.context)
                     .load(char.photoCharElite2)
                     .into(binding.ivCharArt)
+            }
+            binding.actionWeb.setOnClickListener {
+                val url = char.charUrl
+                val intent = Intent(Intent.ACTION_VIEW).apply {
+                    data = Uri.parse(url)
+                }
+                startActivity(intent)
+            }
+            binding.actionShare.setOnClickListener {
+                val intent = Intent(Intent.ACTION_SEND)
+                intent.type = "text/plain"
+                intent.putExtra(Intent.EXTRA_TEXT, "Hei, cek informasi Karakter ${char.name} dari permainan Mobile Arknights:\n${char.charUrl}")
+                startActivity(Intent.createChooser(intent, "Bagikan Informasi Karakter ${char.name} menggunakan"))
             }
         }
     }

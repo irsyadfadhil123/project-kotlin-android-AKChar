@@ -15,4 +15,5 @@ data class Char(
     val photoCharFaction: String,
     val photoCharElite1: String,
     val photoCharElite2: String,
+    val charUrl: String
 ) : Parcelable

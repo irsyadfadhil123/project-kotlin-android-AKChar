@@ -67,6 +67,7 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
         val dataCharFactionPhoto = resources.getStringArray(R.array.data_char_faction_photo)
         val dataCharElite1Photo = resources.getStringArray(R.array.data_char_elite_1_photo)
         val dataCharElite2Photo = resources.getStringArray(R.array.data_char_elite_2_photo)
+        val dataCharUrl = resources.getStringArray(R.array.data_char_url)
         val listChar = ArrayList<Char>()
         for (i in dataName.indices) {
             val char = Char(
@@ -80,6 +81,7 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
                 dataCharFactionPhoto[i],
                 dataCharElite1Photo[i],
                 dataCharElite2Photo[i],
+                dataCharUrl[i]
                 )
             listChar.add(char)
         }

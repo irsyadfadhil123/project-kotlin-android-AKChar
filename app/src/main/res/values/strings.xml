@@ -24,6 +24,11 @@
     <string name="nama">Irsyad Fadhil Makarim</string>
     <string name="email">irsyadfadhil123@gmail.com</string>
     <string name="foto_diri">Foto Diri</string>
+    <string name="splash_screen_title">Arknights Character List</string>
+    <string name="tv_char_moreinfo_text">More Information:</string>
+    <string name="tv_char_share_text">Share Character:</string>
+    <string name="btn_char_moreinfo_text">Read</string>
+    <string name="btn_char_share_text">Share</string>
     <string-array name="data_name">
         <item>Aak</item>
         <item>Chongyue</item>
@@ -153,5 +158,18 @@
         <item>https://arknights.wiki.gg/images/thumb/2/2c/Dreadnought_Guard.png/50px-Dreadnought_Guard.png</item>
         <item>https://arknights.wiki.gg/images/f/fd/Core_Caster.png</item>
         <item>https://arknights.wiki.gg/images/thumb/9/98/Therapist_Medic.png/47px-Therapist_Medic.png</item>
+    </string-array>
+    <string-array name="data_char_url">
+        <item>https://arknights.wiki.gg/wiki/Aak</item>
+        <item>https://arknights.wiki.gg/wiki/Chongyue</item>
+        <item>https://arknights.wiki.gg/wiki/Ebenholz</item>
+        <item>https://arknights.wiki.gg/wiki/Executor_the_Ex_Foedere</item>
+        <item>https://arknights.wiki.gg/wiki/Gnosis</item>
+        <item>https://arknights.wiki.gg/wiki/Hellagut</item>
+        <item>https://arknights.wiki.gg/wiki/Hoederer</item>
+        <item>https://arknights.wiki.gg/wiki/Lee</item>
+        <item>https://arknights.wiki.gg/wiki/Lessing</item>
+        <item>https://arknights.wiki.gg/wiki/Logos</item>
+        <item>https://arknights.wiki.gg/wiki/Lumen</item>
     </string-array>
 </resources>
